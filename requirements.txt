@@ -1,0 +1,13 @@
+osmnx
+networkx
+igraph
+geopandas
+pandas
+numpy
+rasterio
+requests
+shapely
+py3dep
+rioxarray
+matplotlib
+rasterstats

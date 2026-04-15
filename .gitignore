@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data / cache
+cache/
+*.tif
+*.tiff
+
+# Outputs (generated at runtime — track folder, not contents)
+outputs/*
+!outputs/.gitkeep
+
+# Logs
+*.log
+
+# Claude Code internals
+.claude/
+
+# macOS
+.DS_Store
