@@ -1282,19 +1282,25 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
         box-shadow:4px 0 24px rgba(0,0,0,0.7);
       }}
       #sidebar-header {{ padding:22px 18px 0; flex-shrink:0; }}
-      .eyebrow {{ font-size:10px; letter-spacing:2px; color:#475569;
+      .eyebrow {{ font-size:10px; letter-spacing:2px; color:#94a3b8;
                   text-transform:uppercase; margin-bottom:6px; }}
       #sidebar-header h1 {{ font-size:17px; font-weight:700; margin:0 0 5px;
                             line-height:1.25; color:#f8fafc; }}
-      #sidebar-header p {{ font-size:11px; color:#64748b; margin:0 0 14px;
+      #sidebar-header p {{ font-size:11px; color:#94a3b8; margin:0 0 14px;
                            line-height:1.5; }}
+      .draft-banner {{ display:flex; gap:7px; align-items:flex-start;
+                        background:rgba(251,191,36,0.12);
+                        border:1px solid rgba(251,191,36,0.4);
+                        border-radius:7px; padding:9px 11px; margin-bottom:14px;
+                        font-size:10.5px; line-height:1.5; color:#fcd34d; }}
+      .draft-banner .icon {{ flex-shrink:0; font-size:12px; }}
       .stat-box {{ background:#1a2540; border-radius:8px; padding:13px 16px;
                    margin-bottom:14px; border:1px solid #1e3a5f; }}
-      .stat-label {{ font-size:10px; color:#64748b; letter-spacing:1px;
+      .stat-label {{ font-size:10px; color:#94a3b8; letter-spacing:1px;
                      text-transform:uppercase; margin-bottom:3px; }}
-      .stat-value {{ font-size:30px; font-weight:700; color:#e34a33; line-height:1; }}
-      .stat-sub {{ font-size:10px; color:#475569; margin-top:2px; }}
-      .section-label {{ font-size:10px; letter-spacing:1px; color:#475569;
+      .stat-value {{ font-size:30px; font-weight:700; color:#f2703f; line-height:1; }}
+      .stat-sub {{ font-size:10px; color:#94a3b8; margin-top:2px; }}
+      .section-label {{ font-size:10px; letter-spacing:1px; color:#94a3b8;
                         text-transform:uppercase; padding:0 18px 8px; flex-shrink:0; }}
       #main-list {{ overflow-y:auto; flex:1; padding:0 10px 16px; }}
       #main-list::-webkit-scrollbar {{ width:3px; }}
@@ -1303,25 +1309,25 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
                      margin-bottom:5px; cursor:pointer; border:1px solid #1e293b;
                      transition:border-color 0.12s, background 0.12s; }}
       .tract-item:hover {{ background:#1a2540; border-color:#1e3a5f; }}
-      .tract-item.active {{ background:#1a2540; border-color:#e34a33; }}
+      .tract-item.active {{ background:#1a2540; border-color:#f2703f; }}
       .tract-header {{ display:flex; justify-content:space-between;
                        align-items:center; margin-bottom:5px; }}
-      .rank {{ font-size:10px; color:#475569; }}
+      .rank {{ font-size:10px; color:#94a3b8; }}
       .tract-id {{ font-size:13px; font-weight:600; margin-left:4px; color:#e2e8f0; }}
-      .pop-num {{ font-size:14px; font-weight:700; color:#e34a33; }}
+      .pop-num {{ font-size:14px; font-weight:700; color:#f2703f; }}
       .bar-bg {{ height:2px; background:#1e293b; border-radius:2px; margin-bottom:5px; }}
       .bar-fill {{ height:2px; border-radius:2px; }}
-      .tract-meta {{ font-size:10px; color:#475569; }}
+      .tract-meta {{ font-size:10px; color:#94a3b8; }}
       /* Drill-down panel */
       #drill-panel {{ display:none; flex-direction:column; flex:1; overflow:hidden; }}
       #drill-back {{ display:flex; align-items:center; gap:6px; padding:10px 18px;
-                     cursor:pointer; color:#64748b; font-size:11px;
+                     cursor:pointer; color:#94a3b8; font-size:11px;
                      border-bottom:1px solid #1e293b; flex-shrink:0; }}
       #drill-back:hover {{ color:#e2e8f0; }}
       #drill-title {{ padding:12px 18px 6px; flex-shrink:0; }}
       #drill-title .tract-id {{ font-size:14px; color:#f8fafc; }}
       #drill-stats {{ padding:0 18px 10px; flex-shrink:0; }}
-      #drill-stats .ds {{ font-size:11px; color:#64748b; margin-bottom:3px; }}
+      #drill-stats .ds {{ font-size:11px; color:#94a3b8; margin-bottom:3px; }}
       #drill-stats .ds span {{ color:#e2e8f0; font-weight:600; }}
       #block-list {{ overflow-y:auto; flex:1; padding:0 10px 16px; }}
       #block-list::-webkit-scrollbar {{ width:3px; }}
@@ -1330,16 +1336,16 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
                      margin-bottom:4px; border-left:3px solid #334155; }}
       .block-row {{ display:flex; justify-content:space-between; align-items:center; }}
       .block-sc {{ font-size:12px; font-weight:600; }}
-      .block-meta {{ font-size:10px; color:#475569; margin-top:2px; }}
+      .block-meta {{ font-size:10px; color:#94a3b8; margin-top:2px; }}
       /* Legend */
       .legend-wrap {{ flex-shrink:0; padding:12px 18px;
                       border-top:1px solid #1e293b; }}
-      .legend-label {{ font-size:10px; color:#475569; margin-bottom:5px; }}
+      .legend-label {{ font-size:10px; color:#94a3b8; margin-bottom:5px; }}
       .legend-bar {{ height:7px; border-radius:3px;
                      background:linear-gradient(to right,#fff7ec,#fdd49e,#fc8d59,#e34a33,#b30000);
                      margin-bottom:3px; }}
       .legend-ends {{ display:flex; justify-content:space-between;
-                      font-size:10px; color:#475569; }}
+                      font-size:10px; color:#94a3b8; }}
       /* Methods button */
       #methods-btn {{
         position:fixed; bottom:20px; right:20px; z-index:10000;
@@ -1368,7 +1374,7 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
       #methods-box::-webkit-scrollbar-thumb {{ background:#1e3a5f; border-radius:2px; }}
       #methods-box h2 {{ font-size:16px; font-weight:700; color:#f8fafc;
                          margin:0 0 4px; }}
-      #methods-box .sub {{ font-size:10px; color:#475569; letter-spacing:1px;
+      #methods-box .sub {{ font-size:10px; color:#94a3b8; letter-spacing:1px;
                            text-transform:uppercase; margin-bottom:20px; }}
       #methods-box h3 {{ font-size:12px; font-weight:600; color:#94a3b8;
                          text-transform:uppercase; letter-spacing:1px;
@@ -1379,7 +1385,7 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
                            padding:1px 5px; font-size:11px; color:#7dd3fc; }}
       #methods-box a {{ color:#7dd3fc; text-decoration:none; }}
       #methods-close {{
-        float:right; cursor:pointer; color:#475569; font-size:18px;
+        float:right; cursor:pointer; color:#94a3b8; font-size:18px;
         line-height:1; margin-left:12px;
       }}
       #methods-close:hover {{ color:#f1f5f9; }}
@@ -1389,9 +1395,13 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
       <!-- Main list view -->
       <div id="main-view" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
         <div id="sidebar-header">
-          <div class="eyebrow">SF Food Bank · 2026</div>
+          <div class="eyebrow">Draft · 2026</div>
           <h1>Food Access<br>Priority Map</h1>
           <p>Residents below 200% FPL with access<br>to fewer than 2 stores within 30 min.</p>
+          <div class="draft-banner">
+            <span class="icon">&#9888;</span>
+            <span>Work in progress &mdash; methods subject to review. Figures are estimates, not final.</span>
+          </div>
           <div class="stat-box">
             <div class="stat-label">City-wide priority population</div>
             <div class="stat-value">{city_total:,}</div>
@@ -1415,18 +1425,18 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
           <div class="ds">Priority population: <span id="ds-priority"></span></div>
           <div class="ds">Below 200% FPL: <span id="ds-poverty"></span></div>
           <div class="ds">Reach 2+ stores: <span id="ds-access"></span></div>
-          <div class="ds" style="margin-top:6px;font-size:10px;color:#334155;">
+          <div class="ds" style="margin-top:6px;font-size:10px;color:#94a3b8;">
             Blocks colored by round-trip travel time.<br>
             Block population = <em>all residents</em> (2020 Census), not just those below 200% FPL &mdash; income data is only available at the tract level.
           </div>
         </div>
         <div style="padding:0 18px 8px;flex-shrink:0;">
-          <div style="font-size:10px;color:#475569;margin-bottom:3px;">Round-trip walk time</div>
+          <div style="font-size:10px;color:#94a3b8;margin-bottom:3px;">Round-trip walk time</div>
           <div style="height:6px;border-radius:3px;background:linear-gradient(to right,#fff7ec,#fdd49e,#fc8d59,#d7301f,#7f0000);margin-bottom:2px;"></div>
-          <div style="display:flex;justify-content:space-between;font-size:9px;color:#475569;">
+          <div style="display:flex;justify-content:space-between;font-size:9px;color:#94a3b8;">
             <span>0 min</span><span>15 min</span><span>30+ min</span>
           </div>
-          <div style="margin-top:5px;font-size:9px;color:#334155;">Grey = unreachable (&gt;30 min)</div>
+          <div style="margin-top:5px;font-size:9px;color:#94a3b8;">Grey = unreachable (&gt;30 min)</div>
         </div>
         <div id="block-list"></div>
       </div>
@@ -1440,7 +1450,11 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
       <div id="methods-box">
         <span id="methods-close" onclick="document.getElementById('methods-modal').classList.remove('open')">&times;</span>
         <h2>About This Map</h2>
-        <div class="sub">SF Food Bank &middot; Food Access Analysis &middot; 2026</div>
+        <div class="sub">Food Access Analysis &middot; 2026</div>
+        <div class="draft-banner" style="margin-bottom:16px;">
+          <span class="icon">&#9888;</span>
+          <span>This analysis is a work in progress. Data sources, thresholds, and the priority metric below are still under review and may change.</span>
+        </div>
 
         <!-- Tab buttons -->
         <div style="display:flex;gap:8px;margin-bottom:18px;">
@@ -1450,7 +1464,7 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
                    cursor:pointer;font-family:inherit;">Overview</button>
           <button id="tab-technical" onclick="switchTab('technical')"
             style="flex:1;padding:7px 0;border-radius:6px;border:1px solid #1e293b;
-                   background:transparent;color:#64748b;font-size:12px;font-weight:600;
+                   background:transparent;color:#94a3b8;font-size:12px;font-weight:600;
                    cursor:pointer;font-family:inherit;">Technical Details</button>
         </div>
 
@@ -1621,7 +1635,7 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
           html += '<div class="block-item" style="border-left-color:' + col + '">' +
             '<div class="block-row">' +
             '<span class="block-sc" style="color:' + col + '">' + rtStr + '</span>' +
-            '<span style="font-size:11px;color:#64748b;">pop ' + p.pop + '</span>' +
+            '<span style="font-size:11px;color:#94a3b8;">pop ' + p.pop + '</span>' +
             '</div>' +
             '<div class="block-meta">' + p.sc + ' store' + (p.sc !== 1 ? 's' : '') + ' reachable</div>' +
             '</div>';
@@ -1650,10 +1664,10 @@ def make_priority_map(tract_gdf, retailer_gdf, blocks_gdf=None,
         document.getElementById('content-summary').style.display   = tab === 'summary'   ? '' : 'none';
         document.getElementById('content-technical').style.display = tab === 'technical' ? '' : 'none';
         document.getElementById('tab-summary').style.background    = tab === 'summary'   ? '#1a2540' : 'transparent';
-        document.getElementById('tab-summary').style.color         = tab === 'summary'   ? '#f1f5f9' : '#64748b';
+        document.getElementById('tab-summary').style.color         = tab === 'summary'   ? '#f1f5f9' : '#94a3b8';
         document.getElementById('tab-summary').style.borderColor   = tab === 'summary'   ? '#1e3a5f' : '#1e293b';
         document.getElementById('tab-technical').style.background  = tab === 'technical' ? '#1a2540' : 'transparent';
-        document.getElementById('tab-technical').style.color       = tab === 'technical' ? '#f1f5f9' : '#64748b';
+        document.getElementById('tab-technical').style.color       = tab === 'technical' ? '#f1f5f9' : '#94a3b8';
         document.getElementById('tab-technical').style.borderColor = tab === 'technical' ? '#1e3a5f' : '#1e293b';
       }}
 
